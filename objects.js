@@ -23,11 +23,11 @@ var Kiosk=[
             this.fruits=fruits
             this.quantity=quantity
             this.fruitsPriceList = { "orange": 30, "mango": 15, "avocado": 40 }; 
-            this.getTotalCoast=function(){
-                return `${quantity} ${fruits} for KES ${quantity*this.fruitsPriceList.mango}`
+            this.getTotalCost=function(){
+                return `${quantity} ${fruits} for KES ${quantity*this.fruitsPriceList.orange}`
             }
         }
         
     }
-    var kioskCalc= new KioskCalc("mango",7);
-    console.log(kioskCalc.getTotalCoast());
+    var kioskCalc= new KioskCalc("orange",7);
+    console.log(kioskCalc.getTotalCost());
